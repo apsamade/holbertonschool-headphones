@@ -523,12 +523,13 @@ li a {
 /* Contact section */
 .contact {
     background-color: white;
-    padding: 8rem 0;
+    padding: 8rem 2rem;
     width: 100%;
     max-width: 1400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .contact-container {
@@ -586,8 +587,10 @@ li a {
 }
 
 .form-group textarea {
-    resize: vertical;
-    min-height: 120px;
+    resize: none;
+    min-height: auto;
+    height: auto;
+    overflow: hidden;
 }
 
 .submit-button {
@@ -677,6 +680,20 @@ li a {
 
     .contact {
         padding: 6rem 0;
+    }
+
+    .contact-container {
+        max-width: 500px;
+        padding: 0 2rem;
+    }
+
+    .contact-title {
+        font-size: 32px;
+        margin-bottom: 3rem;
+    }
+
+    .contact-form {
+        gap: 1.5rem;
     }
 
     .footer-container {
@@ -819,6 +836,7 @@ li a {
 
     .contact-container {
         max-width: 100%;
+        padding: 0;
     }
 
     .contact-title {
@@ -826,8 +844,19 @@ li a {
         margin-bottom: 2rem;
     }
 
+    .contact-form {
+        gap: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 0.8rem 0.5rem;
+    }
+
     .submit-button {
         width: auto;
-        padding: 1rem 2rem;
+        padding: 0.8rem 2rem;
+        font-size: 0.8rem;
     }
 }
